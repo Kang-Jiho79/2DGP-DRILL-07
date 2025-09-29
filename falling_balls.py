@@ -27,7 +27,7 @@ def reset_world():
     running = True
     world = []
     grass = Grass()
-
+    world.append(grass)
     pass
 
 def update_world():
