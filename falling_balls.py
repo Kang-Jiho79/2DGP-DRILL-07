@@ -42,6 +42,7 @@ def reset_world():
     world.append(grass)
 
     team = [Boy() for _ in range(11)]
+    world += team
     pass
 
 def update_world():
