@@ -4,6 +4,8 @@ import random
 class Grass:
     def __init__(self):
         self.image = load_image('grass.png')
+    def draw(self):
+        self.image.draw(400, 30)
 
 def handle_events():
     global running
