@@ -21,7 +21,10 @@ class Boy:
         self.x += 5
 
 class SmallBall:
-    pass
+    def __init__(self):
+        self.image = load_image("ball21x21.png")
+        self.x, self.y = random.randint(0, 800), 599
+        self.speed = random.randint(5, 10)
 
 def handle_events():
     global running
