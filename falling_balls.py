@@ -2,7 +2,8 @@ from pico2d import *
 import random
 
 class Grass:
-    pass
+    def __init__(self):
+        self.image = load_image('grass.png')
 
 def handle_events():
     global running
