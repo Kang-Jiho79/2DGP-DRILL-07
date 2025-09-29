@@ -57,6 +57,7 @@ def reset_world():
     world += team
 
     balls = [SmallBall() for _ in range(10)]
+    world += balls
     pass
 
 def update_world():
