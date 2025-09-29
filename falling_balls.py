@@ -9,6 +9,9 @@ class Grass:
     def update(self):
         pass
 
+class Boy:
+    pass
+
 def handle_events():
     global running
     events = get_events()
@@ -26,8 +29,11 @@ def reset_world():
     global world
     running = True
     world = []
+
     grass = Grass()
     world.append(grass)
+
+    team = [Boy() for _ in range(11)]
     pass
 
 def update_world():
