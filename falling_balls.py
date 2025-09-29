@@ -33,7 +33,10 @@ class SmallBall:
             self.y = 60
 
 class BigBall:
-    pass
+    def __init__(self):
+        self.image = load_image("ball41x41.png")
+        self.x, self.y = random.randint(0, 800), 599
+        self.speed = random.randint(5, 10)
 
 def handle_events():
     global running
