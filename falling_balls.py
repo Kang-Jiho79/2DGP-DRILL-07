@@ -74,6 +74,7 @@ def reset_world():
     world += small_balls
 
     big_balls = [BigBall() for _ in range(10)]
+    world += big_balls
     pass
 
 def update_world():
