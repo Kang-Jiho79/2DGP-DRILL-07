@@ -32,6 +32,9 @@ class SmallBall:
         if self.y < 60:
             self.y = 60
 
+class BigBall:
+    pass
+
 def handle_events():
     global running
     events = get_events()
@@ -56,8 +59,10 @@ def reset_world():
     team = [Boy() for _ in range(11)]
     world += team
 
-    balls = [SmallBall() for _ in range(10)]
-    world += balls
+    small_balls = [SmallBall() for _ in range(10)]
+    world += small_balls
+
+    big_balls = [BigBall() for _ in range(10)]
     pass
 
 def update_world():
