@@ -28,7 +28,7 @@ class SmallBall:
     def draw(self):
         self.image.draw(self.x, self.y)
     def update(self):
-        if self.y < 60:
+        if self.y <= 60:
             self.y = 60
         else:   self.y -= self.speed
 
@@ -41,9 +41,9 @@ class BigBall:
     def draw(self):
         self.image.draw(self.x, self.y)
     def update(self):
-        if self.y < 70:
-            self.y = 70
-        else:   self.y -= self.speed
+        if self.y <= 75:
+            self.y = 75
+        self.y -= self.speed
 
 
 def handle_events():
