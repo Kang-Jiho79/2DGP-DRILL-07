@@ -31,6 +31,8 @@ def reset_world():
     pass
 
 def update_world():
+    for o in world:
+        o.update()
     pass
 
 
