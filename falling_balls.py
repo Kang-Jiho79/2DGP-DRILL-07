@@ -20,6 +20,9 @@ class Boy:
         self.frame = (self.frame + 1) % 8
         self.x += 5
 
+class SmallBall:
+    pass
+
 def handle_events():
     global running
     events = get_events()
@@ -43,6 +46,8 @@ def reset_world():
 
     team = [Boy() for _ in range(11)]
     world += team
+
+    balls = [SmallBall() for _ in range(10)]
     pass
 
 def update_world():
