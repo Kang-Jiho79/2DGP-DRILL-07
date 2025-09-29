@@ -25,6 +25,8 @@ class SmallBall:
         self.image = load_image("ball21x21.png")
         self.x, self.y = random.randint(0, 800), 599
         self.speed = random.randint(5, 10)
+    def draw(self):
+        self.image.draw(self.x, self.y)
 
 def handle_events():
     global running
