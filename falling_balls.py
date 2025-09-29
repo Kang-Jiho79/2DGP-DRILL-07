@@ -1,6 +1,8 @@
 from pico2d import *
 import random
 
+class Grass:
+    pass
 
 def handle_events():
     global running
@@ -19,6 +21,7 @@ def reset_world():
     global world
     running = True
     world = []
+    grass = Grass()
 
     pass
 
