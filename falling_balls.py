@@ -10,7 +10,10 @@ class Grass:
         pass
 
 class Boy:
-    pass
+    def __init__(self):
+        self.image = load_image('run_animation.png')
+        self.x, self.y = random.randint(0, 800), 90
+        self.frame = random.randint(0, 7)
 
 def handle_events():
     global running
