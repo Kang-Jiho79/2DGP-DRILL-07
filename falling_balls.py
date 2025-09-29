@@ -1,6 +1,8 @@
 from pico2d import *
 import random
 
+running = True
+
 def handle_events():
     global running
     events = get_events()
@@ -12,5 +14,23 @@ def handle_events():
 
 open_canvas()
 
+
+def reset_world():
+    pass
+
+def update_world():
+    pass
+
+
+def render_world():
+    pass
+
+
+reset_world()
+while running:
+    handle_events()
+    update_world()
+    render_world()
+    delay(0.05)
 
 close_canvas()
