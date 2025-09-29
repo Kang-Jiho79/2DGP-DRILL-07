@@ -27,6 +27,10 @@ class SmallBall:
         self.speed = random.randint(5, 10)
     def draw(self):
         self.image.draw(self.x, self.y)
+    def update(self):
+        self.y -= self.speed
+        if self.y < 60:
+            self.y = 60
 
 def handle_events():
     global running
