@@ -1,7 +1,6 @@
 from pico2d import *
 import random
 
-running = True
 
 def handle_events():
     global running
@@ -16,6 +15,11 @@ open_canvas()
 
 
 def reset_world():
+    global running
+    global world
+    running = True
+    world = []
+
     pass
 
 def update_world():
